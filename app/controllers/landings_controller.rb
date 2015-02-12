@@ -1,5 +1,6 @@
 class LandingsController < ApplicationController
   before_action :set_landing, only: [:destroy]
+  http_basic_authenticate_with name: "rails", password: "landho", except: [:new, :create, :thankyou]
 
   def index
     @landings = Landing.all
@@ -19,10 +20,7 @@ class LandingsController < ApplicationController
       WelcomeMailer.welcome(@landing).deliver
       redirect_to thankyou_path, notice: 'Success!'
     else
-    respond_to do |format| 
-      format.html { render :new }
-      format.json { render json: @landing.errors, status: :unprocessable_entity }
-    end  
+      render action: 'new'
     end
   end
 
