@@ -8,13 +8,10 @@ body{
 }
 p { 
 	color: #333333;
+	font-size: 1em;
 	line-height: 1.6em;
 	margin: 0 0 20px;
 	font-weight: 300;
-}
-p.page-title{
-	font-size: 1.4em;
-	margin: 20px 0 20px 0;
 }
 
 em { font-style: italic; }
@@ -71,7 +68,6 @@ footer {
 	width: 100%;
 	font-family: "Open Sans", sans-serif;
   text-align: center;
-  
   color: #fff;
   bottom: 0;
   margin-bottom: 20px;
@@ -229,8 +225,11 @@ a:hover{
 
 /* -------------------- All Mobile Sizes -------------------- */
 @media only screen and (max-width: 767px) {	
-	#logo {width: 200px;}
+	#logo {width: 150px;}
+	.header{margin: 10px 6px 0px 6px;}
+	.btn-custom {color: #fff; background: #2ECC71;}
 	.input-group input {min-width:90%;}
+	footer{font-size: .8em;}
 }
 
 /* -------------------- Mobile Landscape -------------------- */
