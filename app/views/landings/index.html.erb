@@ -1,0 +1,10 @@
+<div class="index overlay">
+  <h2>Captured Emails</h2>
+  <% @landings.each do |landing| %>
+    <tr>
+      <p><%= landing.email %> | <%= link_to 'Delete', landing, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    </tr>
+  <% end %>
+<br>
+  <%= link_to 'Home', root_path %>
+</div>

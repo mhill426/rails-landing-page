@@ -1,0 +1,252 @@
+@import "font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Global Styles */
+body{
+  font-family: "Open Sans", sans-serif;
+  margin: 25px 0px;
+}
+p { 
+	color: #333333;
+	line-height: 1.6em;
+	margin: 0 0 20px;
+	font-weight: 300;
+}
+p.page-title{
+	font-size: 1.4em;
+	margin: 20px 0 20px 0;
+}
+
+em { font-style: italic; }
+strong { font-weight: 700; }
+small { font-size: 0.8em; }
+
+h1,h2,h3,h4,h5,h6 {
+	color: #333333;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.17em;
+	margin: 0 0 10px;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: 300;	
+}
+
+h5 {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+h6 {
+	font-size: 0.8em;
+	font-weight: 300;
+}
+blockquote{
+	font-weight: 300;
+	font-size: 1.2em;
+}
+error {
+ color: #e74c3c;
+}
+hr {border: .5px solid rgba(0, 0, 0, 0.65);
+}
+footer {
+	float: none;
+	position: absolute;
+	width: 100%;
+	font-family: "Open Sans", sans-serif;
+  text-align: center;
+  
+  color: #fff;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+a{
+	color: #f3f3f3;
+	text-decoration: none;
+}
+a:hover{
+	color: #2ECC71;
+}
+.btn-custom {
+  color: #393939;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 3px solid #2ECC71;
+  border-radius: 0px;
+  webkit-border-radius: 0px;
+  padding: 10px 40px;
+  background: transparent;
+}
+.btn-custom:hover {
+  color: #fff;
+  background: #2ECC71;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Main */
+#background-image {
+	min-width: 100%;
+  min-height: 100%;
+  background: #fefefe url(/assets/bg-profile.jpg)center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#logo{
+	width: 250px;
+}
+.main {
+	margin-top: 15%;
+}
+.center {
+	float: none;
+	margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.header{
+	margin-top: 10px;
+}
+.social{ 
+	margin-top: 15px;
+}
+.social i{
+	font-size: 2em;
+	color: #fff;
+	margin: 10px 8px;
+}
+.social i:hover{
+	color: #2F3238;
+	text-decoration: none;
+}
+
+/* Index */
+.overlay { 
+	z-index: 1;
+  background: rgba(250, 250, 250, .35);
+  width: 40%;
+  padding: 15px;
+}
+.index{
+	margin-left: 25px;
+}
+
+/* Typography for dark backgrounds */
+.dark p, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 { color: #fff; }
+.dark a { color: #fff!important; }
+
+/* Form */
+.input-group input {
+	text-align: center;
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid rgba(200,200,200,0.5);
+	background: rgba(0,0,0,0.4);
+	padding: 10px;
+	min-width:40%; 
+}
+.input-group input:focus, .input-group textarea:focus {
+	outline: none;
+	border: 2px solid #fff;
+	background: rgba(0, 0, 0, 0.3);
+}
+.field_with_errors {
+  background: transparent;
+  display: inline;
+}
+.input-group input[type="submit"]{
+	color: #fff!important;
+	background: #27ae60;
+	text-align: center;
+	cursor: pointer;
+	border: 2px solid #fff;
+	padding: 3px 5px;
+}
+.input-group input[type="submit"] a{
+	text-decoration: none;
+	color: #000;
+}
+.input-group input[type="submit"]:hover {
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	background: #27ae60;
+	text-decoration: none;
+	color: #000!important;
+}
+
+
+
+/* 20.Media-Query
+-------------------------------------------------------------- */
+
+/* -------------------- Large screens -------------------- */
+@media only screen and (min-width : 1680px) {
+	
+}
+
+/* -------------------- Tablet Landscape -------------------- */
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	
+}
+
+/* -------------------- Smaller than 960px -------------------- */
+@media only screen and (max-width: 959px) {
+	
+}
+
+
+/* -------------------- Tablet Portrait Size -------------------- */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+
+/* -------------------- All Mobile Sizes -------------------- */
+@media only screen and (max-width: 767px) {	
+	#logo {width: 200px;}
+	.input-group input {min-width:90%;}
+}
+
+/* -------------------- Mobile Landscape -------------------- */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}	
+
+/* -------------------- Mobile Portrait -------------------- */
+@media only screen and (max-width: 479px) {
+	/*.logo{font-size: 2.7em;}
+	.input-group input[type="submit"]{border-radius: 5px;	display: inline-block;}
+	.input-group input[type="email"] {border-radius: 5px; width: 300px;}
+	.input-group input:focus, .input-group textarea:focus {outline: none;	border: 1px solid #fff;}
+*/}
+
+/* Retina Display Media Query */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+
+	/* Retina-specific stuff here */
+}
