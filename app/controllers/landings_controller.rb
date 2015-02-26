@@ -1,6 +1,6 @@
 class LandingsController < ApplicationController
   before_action :set_landing, only: [:destroy]
-  http_basic_authenticate_with name: "rails", password: "landho", except: [:new, :create, :thankyou]
+  http_basic_authenticate_with name: "example", password: "pa$$w0rd", except: [:new, :create, :thankyou]
 
   def index
     @landings = Landing.all

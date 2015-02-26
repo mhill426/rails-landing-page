@@ -24,4 +24,6 @@ heroku addons:add mandrill
 ``` 
 and thats it, just add your images, content, and start collecting emails.
 
+Also, don't forget to change the username and password in the landings controller.
+
 ## Thank you.
